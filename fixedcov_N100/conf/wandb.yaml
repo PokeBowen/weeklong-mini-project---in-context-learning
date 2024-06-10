@@ -1,0 +1,5 @@
+wandb:
+    project: in-context-training
+    entity: ucla-bowenzheng
+    notes:
+    log_every_steps: 1000

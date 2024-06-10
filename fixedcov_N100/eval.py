@@ -44,9 +44,6 @@ def eval_batch(model, task_sampler, xs, xs_p=None):
         device = "cuda"
     else:
         device = "cpu"
-    
-    # set device to CPU for evaluation. Somehow the model is not on CUDA when testing... very odd
-    #device = "cpu"
 
     if xs_p is None:
         ys = task.evaluate(xs)
